@@ -5,19 +5,19 @@ This Vagrant is a simple __Ubuntu Trusty64__ vagrant configuration for LAMP stac
 
 # Overview
 This vagrant use [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) from [Atlas Vagrant Box](https://atlas.hashicorp.com/boxes/search?utm_source=vagrantcloud.com&vagrantcloud=1).
-  On your 'vagrant up' command, this vagrantfile will automatically download the box. Vagrant folder here contain a `bootstrap.sh` file which provision the vagrant box.
+On your 'vagrant up' command, this vagrantfile will automatically download the box. Vagrant folder here contain a `bootstrap.sh` file which provision the vagrant box.
   
   You need to place your projects in `projects` directory. This directory is synced with `/var/www/html` directory in the virtual machine. 
   This project folder also contain a `config` folder which is used during the provisioning. 
 
-This vagrant box is configured to use '1024mb' of RAM and 1 Cpu. You can change ths configuration from Vagrantfile.
+This vagrant box is configured to use '1024mb' of RAM and 1 CPU. You can change ths configuration from Vagrantfile.
  
 ## Included packages
 
 - Ubuntu Trusty64 (64-Bit)
 - Apache 2
-- PHP _v5.6.7_ with mysql, mcrypt, memcached, memcache, sqlite, xmlrpc, geoip gd, xdebug, php5-fpm, php5-common
-- MySQL _v5.5.41_
+- PHP v5.6.7 with mysql, mcrypt, memcached, memcache, sqlite, xmlrpc, geoip gd, xdebug, php5-fpm, php5-common
+- MySQL v5.5.41
 - Git
 - Composer
 - NPM
@@ -60,7 +60,7 @@ Linux/Mac - use root user or sudo to edit this file:
 
    Add the following lines to your hosts file:
 ```
-10.0.0.103 dev.ubuntuspace.com
+10.0.0.101 dev.ubuntuspace.com
 ```
 
 
@@ -81,7 +81,7 @@ You must have [Vagrant](http://vagrantup.com) and [VirtualBox](https://www.virtu
 These are credentials setup by default.
 
 ## Host Address:
-- Host: 10.0.0.103 (Change in Vagrantfile if you like)
+- Host: 10.0.0.101 (Change in Vagrantfile if you like)
  
 ## SSH
 - Username: vagrant
