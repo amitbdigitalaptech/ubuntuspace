@@ -10,13 +10,13 @@ This vagrant use [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trus
   You need to place your projects in `projects` directory. This directory is synced with `/var/www/html` directory in the virtual machine. 
   This project folder also contain a `config` folder which is used during the provisioning. 
 
-This vagrant box is configured to use '1024mb' of RAM and 1 Cpu. You can change ths configuration from Vagrantfile.
+This vagrant box is configured to use '1024 mb' of RAM and 1 CPU core. You can change ths configuration from Vagrantfile.
  
 ## Included packages
 
 - Ubuntu Trusty64 (64-Bit)
 - Apache 2
-- PHP _v7.1_ with mysql, mcrypt, memcached, memcache, sqlite, xmlrpc, geoip gd, xdebug, php7.1-fpm, php7.1-common
+- PHP _v7.1_ with mysql, mcrypt, memcached, memcache, sqlite, xmlrpc, geoip gd, xdebug, php7.1-fpm, php7.1-common, php7.1-bcmath
 - MySQL _v5.5.41_
 - Git
 - Node

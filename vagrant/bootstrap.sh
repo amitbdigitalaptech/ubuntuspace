@@ -26,7 +26,9 @@ sudo apt-get install php7.1 -y > /dev/null
 #echo "Installing PHP extensions"
 ## The following line is not tested
 # sudo apt-get install php7.1-common php7.1-dev php5-cli php7.1-fpm -y > /dev/null
-sudo apt-get install -y libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip php7.1-bcmath -y > /dev/null
+sudo apt-get install -y libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring -y > /dev/null
+sudo apt-get install -y php7.1-gd php7.1-intl php7.1-xml php7.1-mysql -y > /dev/null
+sudo apt-get install -y php7.1-mcrypt php7.1-zip php7.1-bcmath php7.1-xdebug -y > /dev/null
 sudo apt install php7.1-curl -y > /dev/null
 sudo apt install php7.1-soap -y > /dev/null
 sudo a2enmod rewrite
@@ -39,8 +41,8 @@ sudo chown www-data:www-data /var/log/xdebug > /dev/null
 
 echo "Installing xdebug"
 sudo pecl install xdebug > /dev/null
-echo "Configuring xdebug"
-sudo cp /var/www/html/config/php.ini /etc/php5/apache2/php.ini > /dev/null
+#echo "Configuring xdebug"
+#sudo cp /var/www/html/config/php.ini /etc/php5/apache2/php.ini > /dev/null
 sudo service apache2 restart > /dev/null
 echo "Xdebug installation completeted"
 
